@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWishlist"
+        android:layout_width="398dp"
+        android:layout_height="711dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/wishlist_layout" />
+
+    <EditText
+        android:id="@+id/etStore"
+        android:layout_width="237dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:hint="Name of Store or Website"
+        android:padding="6sp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etItem"
+        android:layout_width="237dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:hint="What is your item?"
+        android:padding="6sp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/etStore"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="86dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:hint="Price"
+        android:padding="6sp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/addButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="115dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="4dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
